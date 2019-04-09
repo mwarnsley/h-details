@@ -1,0 +1,204 @@
+/*************************
+    GLOBAL STYLES
+**************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    overflow-x: hidden;
+    width: 100%;
+} */
+/*************************
+    NAVIGATION STYLES
+**************************/
+.main-nav-container {
+    background-color: #000000;
+    border-bottom: 1px solid #474747;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.nav-list-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+}
+.nav-list-item {
+    color: #ffffff;
+}
+.nav-list-item .title {
+    font-size: 2em;
+}
+.go-back-button {
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(75, 75, 75, 1) 100%
+    );
+    border: 1px solid #474747;
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+.go-back-button:hover {
+    cursor: pointer;
+}
+.go-back-icon {
+    margin-right: 4px;
+}
+.hilton-logo {
+    height: 40px;
+    width: 50px;
+}
+/*************************
+    MAIN CONTENT STYLES
+**************************/
+.main-content-container {
+    background: url('./assets/background.png') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 65px;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.content-information {
+    padding: 0 20px;
+}
+/*************************
+    MAIN IMAGE STYLES
+**************************/
+.hotel-image-container {
+    margin: 20px 0;
+    width: 100%;
+}
+.hotel-image {
+    border: 5px solid #ffffff;
+    max-width: 500px;
+    width: calc(100% - 10px);
+}
+/*************************
+    HOTEL INFORMATION STYLES
+**************************/
+.hotel-name {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.hotel-address {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+.street-address {
+    margin-bottom: 5px;
+}
+.city-state-zip {
+    margin-bottom: 5px;
+}
+.hotel-phone-number {
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+/*************************
+    HOTEL ACCORDION STYLES
+**************************/
+.hotel-accordion-list-container {
+    margin-top: 25px;
+}
+.accordion-item.active .panel-content {
+    height: auto;
+    padding: 20px;
+}
+.panel-title {
+    background: #e1e6ea;
+    border-bottom: 1px solid #cbcbcb;
+    color: #001325;
+    font-size: 1.8em;
+    padding: 15px 20px;
+}
+.accordion-item:first-child .panel-title {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.accordion-item:last-child .panel-title {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.accordion-item.active:last-child .panel-title {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.panel-content {
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+}
+.panel-content p {
+    margin-bottom: 10px;
+}
+/*************************
+    FOOTER STYLES
+**************************/
+.footer {
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    height: 65px;
+}
+/*************************
+    COMMON MEDIA QUERIES
+**************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav-list-item .title {
+        font-size: 1.4em;
+    }
+    .hotel-name {
+        font-size: 1.6em;
+    }
+    .hotel-address {
+        font-size: 1.2em;
+    }
+    .hotel-phone-number {
+        font-size: 1.2em;
+    }
+    .panel-title {
+        font-size: 1.2em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
